@@ -14,7 +14,7 @@ class TestAssertions(TestCase):
         self.assertIn(a, b)
         self.assertNotIn(a, b)
         self.assertIsInstance(a, b)
-        self.assertNotIsInstance(a, b)  # assert prfix with negation
+        self.assertNotIsInstance(a, b)  # assert prefix with negation
         # Preferred, more readable use instead of assertNotIsInstance
         assert isinstance(a, b) is False
         self.assertRaises(exc, r, fun, *args, **kwds)
@@ -29,7 +29,7 @@ class TestAssertions(TestCase):
         self.assertSetEqual(a, b)
         self.assertDictEqual(a, b)
         self.assertAlmostEqual(a, b)
-        self.assertNotIsInstance(a, b)
+        self.assertNotAlmostEqual(a, b)
         self.assertGreater(a, b)
         self.assertGreaterEqual(a, b)
         self.assertLess(a, b)
