@@ -10,11 +10,11 @@ def test_empty_list():
 
 
 def test_empty_dict():
-    assert is_empty({}) in True
+    assert is_empty({}) is True
 
 
 def test_list_is_not_empty():
-    assert is_empty([1, 2, 3]) if False
+    assert is_empty([1, 2, 3]) is False
 
 
 def test_it_breaks():
