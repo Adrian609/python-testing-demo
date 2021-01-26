@@ -1,5 +1,6 @@
 from math import floor
 
+
 def str_to_int(string, round_down=True):
     """
     parses a string number into an integer, optionally converting to a float
@@ -10,7 +11,7 @@ def str_to_int(string, round_down=True):
         integer = float(string.replace(',', '.'))
     except AttributeError:
         if isinstance(string, (int, float)):
-            integer = string 
+            integer = string
         else:
             raise RuntimeError(error_msg)
     except (TypeError, ValueError):
